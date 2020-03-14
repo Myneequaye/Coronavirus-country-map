@@ -13,10 +13,10 @@
     <script>
 
       function initialize() {
-        alert("To see the title of a marker, hover over the marker but don't click.");
-        var myLatlng = new google.maps.LatLng(37.39361,-122.099263)
+        alert("Hover over the marker to see the name of the country. Don't click.");
+        var myLatlng = new google.maps.LatLng(17.39361,-12.099263)
         var mapOptions = {
-          zoom: 1,
+          zoom: 2,
           center: myLatlng,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
@@ -46,10 +46,11 @@
       }
     </script>
   </head>
+  <h1 style="text-align: center;">Coronavirus: Cases have been reported in the following countries.</h1>
   <body onload="initialize()">
 <div id="map_canvas" style="height: 500px"></div>
-<p>Test map by <a href="https://facebook.com/myneequaye">Isaac Neequaye</a></p>
-<p>
-Special Thanks to <a href="https://www.dr-chuck.com">Dr. Chuck Severance</a></p>
+<h3>Use the + and - sign on the map to zoom in andout respectively.</h3>
+<p>Created by <a href="https://facebook.com/myneequaye">Isaac Neequaye</a></p>
+
 </body>
 </html>
